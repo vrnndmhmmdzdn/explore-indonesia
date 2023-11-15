@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'montserrat';
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+.back{
+    width: 120px;
+    height: 40px;
+    background-color: #537188;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+.back i{
+    font-size: 20px;
+}
+.back p{
+    font-size: 10px;
+}
+.buying{
+    width: 800px;
+    height: 220vh;
+    border: 1px solid white;
+    border-top: none;
+    box-shadow: 1px 0px 5px rgba(219, 219, 219, 0.884),-1px 0px 5px rgba(219, 219, 219, 0.884);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 100px;
+}
+.buying .card{
+    width: 250px;
+    height: 50vh;
+    border: 1px solid grey;
+    box-shadow: 2px 3px 5px rgb(158, 158, 158);
+    display: flex;
+    flex-wrap: wrap;
+    transition: 500ms;
+}
+.buying .card:hover{
+    transform: scale(1.05);
+}
+.buying .card img{
+    width: 100%;
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.buying .text{
+    width: 90%;
+    height: 40%;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: column;
+}
+.buying h3{
+    margin-bottom: 8px;
+}
+.buying p{
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+.buying .stars{
+    width: 100%;
+    color: #FFBB00;
+}
+.button{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.button .buy-now{
+    width: 45%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #537188;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 500ms;
+}
+.button .buy-now:hover{
+    color: #537188;
+    background-color: white;
+    border: 1px solid #537188;
+    box-shadow: 0px 0px 4px 1px #537188;
+}
+.button .keranjang{
+    width: 45%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #537188;
+    background-color: white;
+    border: 1px solid #537188;
+    cursor: pointer;
+    transition: 500ms;
+}
+.button .keranjang:hover{
+    background-color: #537188;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px 1px #537188;
+}
+.home {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.527);
+    margin: auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    /* border-radius: 30px; */
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+.home div {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+.show-more{
+    width: 800px;
+    height: 7vh;
+    background-color: #537188;
+    color: white;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 100px auto;
+    transition: 200ms;
+    cursor: pointer;
+}
+.show-more:hover{
+    background-color: #84939e;
+}
+.footer-dekstop {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(180, 180, 180);
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-dekstop div {
+    width: 150px;
+    height: 150px;
+}
+
+.footer-dekstop div h5 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-dekstop .copyright {
+    display: flex;
+    width: 800px;
+    height: 20px;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* mobile */
+.footer-mobile {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    display: none;
+    position: relative;
+    bottom: 43px;
+}
+
+.footer-mobile p {
+    text-align: center;
+    margin: auto;
+}
+@media screen and (max-width:768px) {
+    .back{
+        display: none;
+    }
+    .buying{
+        width: 100%;
+        height: 335vh;
+    }
+    .buying .card{
+        width: 46%;
+        margin-bottom: 18px;
+    }
+    .home{
+        display: flex;
+    }
+    .footer-dekstop {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .show-more{
+        width: 95%;
+        position: relative;
+        bottom: 0;
+
+    }
+}
